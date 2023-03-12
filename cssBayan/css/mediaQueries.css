@@ -4,7 +4,7 @@
    }
 
    .subtitle {
-      font-size: 0.7em;
+      font-size: 0.8em;
       line-height: 2em;
    }
 
@@ -21,10 +21,14 @@
    }
 
    .hidden__content img {
-      width: 30em;
+      width: 100%;
    }
 
    .logos img {
-      width: 3.5em;
+      width: 2.5em;
+   }
+
+   .meme:hover label.label-hidden .label-title:before {
+      display: none;
    }
 }
