@@ -60,25 +60,20 @@ transition: 1s;
     transition: 1s;
 }
 
-
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.label-hidden:checked img {
-    transform: scale(1);
-    transition: 1s;
-}
-
-
 .meme {
   margin: 2em;
   line-height: 1.2em;  
 }
+
 .meme label.label-hidden:hover {
   cursor: pointer;
 }
+
 .meme .d-none {
     display: none;
 }
@@ -113,7 +108,6 @@ transition: 1s;
   color: black;
 }
 
-
 .meme:hover label.label-hidden .label-title:before {
     content: "";
     background: url(../assets/img/svg/plus.svg) no-repeat 50% 50% / 1em 1em;
@@ -134,24 +128,27 @@ transition: 1s;
     border-radius: 1em;
   }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .label-title, .meme label.label-hidden input[type=radio]:checked ~ .label-title {
+.meme label.label-hidden input[type=checkbox]:checked~ .label-title,
+ .meme label.label-hidden input[type=radio]:checked ~ .label-title {
   color: black;
 }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .label-title:before, .meme label.label-hidden input[type=radio]:checked ~ .label-title:before {
+.meme label.label-hidden input[type=checkbox]:checked ~ .label-title:before,
+.meme label.label-hidden input[type=radio]:checked ~ .label-title:before {
   border-color: black;
   transform: rotate(-135deg);
 }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content, .meme label.label-hidden input[type=radio]:checked ~ .hidden__content {
+.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content,
+.meme label.label-hidden input[type=radio]:checked ~ .hidden__content {
     display: flex;
   transform: scale(1);
   height: auto;
   margin: 15px auto;
-
 }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content::before, .meme label.label-hidden input[type=radio]:checked ~ .hidden__content::before {
+.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content::before,
+.meme label.label-hidden input[type=radio]:checked ~ .hidden__content::before {
   width: 100%;
   left: 10px;
 }
