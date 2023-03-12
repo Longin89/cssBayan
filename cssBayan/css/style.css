@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    height: 100%;
+    line-height: 1;
+    font-family: 'Press Start 2P';;
+    font-weight: 400;
+    font-size: 16px;
+    color: #010201;
+    background-color: #F5F5EB;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.title,
+.subtitle {
+    margin: 30px 0 10px 0;
+    text-align: center;
+}
+
+.h1__line {
+    margin: 0 auto;
+    border-bottom: 4px solid black;
+    width: 50%;
+}
+
+.memes__block {
+    text-align: center;
+}
+
+.meme {
+    margin: 50px;
+}
+
+.sum__title {
+    margin: 25px;
+}
+
+.logos {
+display: flex;
+align-self: center;
+margin: 20px;
+transition: 1s;
+}
+
+.logos img {
+    display: flex;
+    align-self: center;
+    width: 80px;
+}
+
+.logos:hover {
+    transform: rotateZ(360deg);
+    transition: 1s;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
