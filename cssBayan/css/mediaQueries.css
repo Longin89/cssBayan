@@ -1,0 +1,26 @@
+@media screen and (max-device-width: 576px) {
+   .title {
+      font-size: 0.8em;
+   }
+
+   .subtitle {
+      font-size: 0.7em;
+      line-height: 2em;
+   }
+
+   .h1__line {
+      border-bottom:  0.2em solid black;
+   }
+
+   .meme {
+      font-size: 0.6em;
+   }
+
+   .hidden__content {
+      justify-content: center;
+   }
+
+   .hidden__content img {
+      width: 30em;
+   }
+}

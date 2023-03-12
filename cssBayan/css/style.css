@@ -6,14 +6,12 @@
 
 html,
 body {
-    width: 1400px;
-    height: 100%;
     margin: 0 auto;
     height: 100%;
     line-height: 1;
     font-family: 'Press Start 2P';;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     color: #010201;
     background-color: #F5F5EB;
     scroll-behavior: smooth;
@@ -22,6 +20,7 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     min-height: 100%;
 }
 
@@ -31,39 +30,27 @@ main {
 
 .title,
 .subtitle {
-    margin: 30px 0 10px 0;
+    margin: 2em 0 1em 0;
     text-align: center;
 }
 
 .h1__line {
     margin: 0 auto;
-    border-bottom: 4px solid black;
+    border-bottom: 0.5em solid black;
     width: 50%;
-}
-
-.memes__block {
-    text-align: center;
-}
-
-.meme {
-    margin: 50px;
-}
-
-.sum__title {
-    margin: 25px;
 }
 
 .logos {
 display: flex;
 align-self: center;
-margin: 20px;
+margin: 1em;
 transition: 1s;
 }
 
 .logos img {
     display: flex;
     align-self: center;
-    width: 80px;
+    width: 5em;
 }
 
 .logos:hover {
@@ -71,7 +58,108 @@ transition: 1s;
     transition: 1s;
 }
 
+
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.meme {
+  margin: 20px;
+  line-height: 20px;  
+}
+.meme label.label-hidden:hover {
+  cursor: pointer;
+}
+.meme .d-none {
+    display: none;
+}
+
+.meme label.label-hidden .hidden__content {
+  transform: scale(0);
+  transition: all 1s;
+  display: flex;
+  width: 50%;
+  height: 0;
+  padding: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.meme label.label-hidden .hidden__content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  background: black;
+  bottom: -3px;
+  transition: 1s;
+  left: 50%;
+}
+
+.meme label.label-hidden .label-title {
+  text-align: center;
+  transition: all 0.5s;
+  display: block;
+  width: 100%;
+  height: 25px;
+  line-height: 20px;
+  position: relative;
+  color: black;
+}
+
+
+.meme:hover label.label-hidden .label-title:before {
+    content: "";
+    background: url(../assets/img/svg/plus.svg) no-repeat 50% 50% / 1em 1em;
+    border-top: none;
+    border-left: none;
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 255px;
+    top: 5px;
+    transition: 1s;
+  }
+
+  .hidden__content img {
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 1em;
+  }
+
+.meme label.label-hidden input[type=checkbox]:checked ~ .label-title, .meme label.label-hidden input[type=radio]:checked ~ .label-title {
+  color: black;
+  padding: 0;
+}
+
+.meme label.label-hidden input[type=checkbox]:checked ~ .label-title:before, .meme label.label-hidden input[type=radio]:checked ~ .label-title:before {
+  border-color: black;
+  transform: rotate(-135deg);
+  
+}
+
+.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content, .meme label.label-hidden input[type=radio]:checked ~ .hidden__content {
+    display: flex;
+  transform: scale(1);
+  height: auto;
+  margin: 15px auto;
+
+}
+
+.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content::before, .meme label.label-hidden input[type=radio]:checked ~ .hidden__content::before {
+  width: 100%;
+  left: 0;
 }
