@@ -23,4 +23,8 @@
    .hidden__content img {
       width: 30em;
    }
+
+   .logos img {
+      width: 3.5em;
+   }
 }

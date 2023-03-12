@@ -76,7 +76,7 @@ transition: 1s;
 
 
 .meme {
-  margin: 20px;
+  margin: 2em;
   line-height: 20px;  
 }
 .meme label.label-hidden:hover {
@@ -129,8 +129,8 @@ transition: 1s;
     width: 16px;
     height: 16px;
     position: absolute;
-    right: 255px;
-    top: 5px;
+    right: 40em;
+    top: 0.1em;
     transition: 1s;
   }
 
