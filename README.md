@@ -1,0 +1,1 @@
+[https://longin89.github.io/rsschool-cv/](https://longin89.github.io/rsschool-cv/)
