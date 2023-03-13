@@ -125,7 +125,7 @@ transition: 1s;
 .hidden__content img {
     margin: 0 auto;
     width: 50%;
-    border-radius: 1em;
+    border-radius: 2em;
 }
 
 .meme label.label-hidden input[type=checkbox]:checked~.label-title {
