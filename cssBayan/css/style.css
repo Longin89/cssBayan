@@ -122,33 +122,41 @@ transition: 1s;
     transition: 1s;
   }
 
-  .hidden__content img {
+.hidden__content img {
     margin: 0 auto;
     width: 50%;
     border-radius: 1em;
-  }
-
-.meme label.label-hidden input[type=checkbox]:checked~ .label-title,
- .meme label.label-hidden input[type=radio]:checked ~ .label-title {
-  color: black;
 }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .label-title:before,
-.meme label.label-hidden input[type=radio]:checked ~ .label-title:before {
-  border-color: black;
-  transform: rotate(-135deg);
+.meme label.label-hidden input[type=checkbox]:checked~.label-title {
+    color: black;
 }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content,
-.meme label.label-hidden input[type=radio]:checked ~ .hidden__content {
+.meme label.label-hidden input[type=checkbox]:checked~.label-title:before {
+    border-color: black;
+    transform: rotate(-135deg);
+}
+
+.meme label.label-hidden input[type=checkbox]:checked~.hidden__content,
+.meme label.label-hidden input[type=checkbox]:hover~.hidden__content {
+    visibility: visible;
     display: flex;
-  transform: scale(1);
-  height: auto;
-  margin: 15px auto;
+    transform: scale(1);
+    transition: 1s;
+    height: auto;
+    margin: auto;
 }
 
-.meme label.label-hidden input[type=checkbox]:checked ~ .hidden__content::before,
-.meme label.label-hidden input[type=radio]:checked ~ .hidden__content::before {
-  width: 100%;
-  left: 10px;
+.meme label.label-hidden input[type=checkbox]~.hidden__content {
+    margin: auto;
+    display: flex;
+    transform: scale(0);
+    visibility: hidden;
+    transition: 2s;
+    height: 0.5em;
+}
+
+.meme label.label-hidden input[type=checkbox]:checked~.hidden__content::before {
+    width: 100%;
+    left: 10px;
 }
