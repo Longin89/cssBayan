@@ -42,29 +42,6 @@ main {
     width: 50%;
 }
 
-.logos {
-display: flex;
-align-self: center;
-margin: 1em;
-transition: 1s;
-}
-
-.logos img {
-    display: flex;
-    align-self: center;
-    width: 5em;
-}
-
-.logos:hover {
-    transform: rotateZ(360deg);
-    transition: 1s;
-}
-
-.footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .meme {
   margin: 2em;
   line-height: 1.2em;  
